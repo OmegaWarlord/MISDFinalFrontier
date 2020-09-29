@@ -1,2 +1,3 @@
-# MISDFrontierJournalismWebsite
-The website code for MISD Frontier Journalism Website.
+## This is the code for the frontier news website
+
+its empty
