@@ -1,4 +1,4 @@
-/* Last updated Alpha 1.3.0 build 0029-d */
+/* Last updated Alpha 1.4.0 build 0029-e */
 
 header {
     background: #8723c1;
@@ -47,6 +47,10 @@ header {
 
 #navButton:hover{
     background-color:gainsboro;
+}
+
+#navButton:focus {
+    outline: none;
 }
 
 #frontierLogo {
