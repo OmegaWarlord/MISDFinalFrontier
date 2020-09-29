@@ -1,7 +1,7 @@
-/* Last updated Alpha 1.0.0 build 0029-a
+/* Last updated Alpha 1.1.0 build 0029-b */
 
 header {
-    background: cadetblue;
+    background: #003366;
     padding-top: 10px;
     padding-bottom: 0px;
     padding-left: 20px;
@@ -16,11 +16,11 @@ header {
     display: flex;
 }
 
-button {
+#navButton {
     background-color:white;
     border: none;
     color: black;
-    padding: 15px 32px;
+    padding: 10px 15px;
     margin: 5px;
     text-align: center;
     text-decoration: none;
@@ -30,6 +30,6 @@ button {
     border-radius: 15px;
 }
 
-button:hover {
-    border: 1px solid gray;
+#navButton:hover {
+    background-color: gainsboro;
 }
