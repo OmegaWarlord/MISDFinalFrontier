@@ -1,7 +1,7 @@
-/* Last updated Alpha 1.1.0 build 0029-b */
+/* Last updated Alpha 1.2.0 build 0029-c */
 
 header {
-    background: #003366;
+    background: #8723c1;
     padding-top: 10px;
     padding-bottom: 0px;
     padding-left: 20px;
@@ -10,17 +10,27 @@ header {
 
 .headerTitle {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    font-size: 80px;
+    margin-left: 20px;
+    padding: 0px;
+    float: left;
 }
 
 .flex-container {
     display: flex;
 }
 
+#navBar {
+    background-color: white;
+    border-top: tomato;
+}
+
 #navButton {
     background-color:white;
     border: none;
     color: black;
-    padding: 10px 15px;
+    padding: 15px 15px;
     margin: 5px;
     text-align: center;
     text-decoration: none;
@@ -30,6 +40,6 @@ header {
     border-radius: 15px;
 }
 
-#navButton:hover {
-    background-color: gainsboro;
+#navButton:hover{
+    background-color:gainsboro;
 }
