@@ -33,7 +33,7 @@ header {
 
 #navBar {
     background-color: white;
-    transition: 0.15s;
+    transition: ease-in-out 0.15s;
     border: solid 5px lightblue;
     border-left-color: white;
     border-right-color: white;
