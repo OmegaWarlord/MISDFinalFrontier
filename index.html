@@ -1,35 +1,46 @@
-<!--Last Updated Pre Alpha 2.0.0 build 0030-c-->
+<!--Last Updated Pre Alpha 2.1.0 build 0030-d-->
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MISDM Frontier News | Home Page</title>
+        <title>Frontier News | Home Page</title>
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="otherfiles/pictures/favicon.ico">
         <script src="JavaScript/functions.js"></script>
+        <meta name="Description" content="MISD Frontier STEM Highschool Journalism Club">
     </head>
     <body>
-        <header>
-            <div style="overflow: auto;">
-                <img src="otherfiles/pictures/Frontier_High_School-NEW.png" id="frontierLogo">
-                <h1 class="headerTitle">Frontier News</h1>
+        <div id="header">
+            <header>
+                <div style="overflow: auto;">
+                    <img src="otherfiles/pictures/Frontier_High_School-NEW.png" id="frontierLogo">
+                    <h1 id="headerTitle">Frontier News</h1>
+                </div>
+            </header>
+            <div class="flex-container" id="navBar">
+                <hr>
+                <button class="navButton" onclick="goToURL('index.html')" type="button">Home</button>
+                <hr>
+                <button class="navButton" onclick="goToURL('latest.html')" type="button">Latest</button>
+                <hr>
+                <button class="navButton" onclick="goToURL('newsLetters.html')" type="button">News Letters</button>
+                <hr>
+                <button class="navButton" onclick="goToURL('articles.html')" type="button">Articles</button>
+                <hr>
+                <button class="navButton" onclick="goToURL('videos.html')" type="button">Videos</button>
+                <hr>
+                <button class="navButton" onclick="goToURL('podcasts.html')" type="button">Podcasts</button>
+                <hr>
+                <button class="navButton" onclick="goToURL('blogs.html')" type="button">Blogs</button>
+                <hr>
             </div>
-        </header>
-        <div class="flex-container" id="navBar">
-            <hr>
-            <button class="navButton" onclick="goToURL('index.html')" type="button">Home</button>
-            <hr>
-            <button class="navButton" onclick="goToURL('latest.html')" type="button">Latest</button>
-            <hr>
-            <button class="navButton" onclick="goToURL('newsLetters.html')" type="button">News Letters</button>
-            <hr>
-            <button class="navButton" onclick="goToURL('articles.html')" type="button">Articles</button>
-            <hr>
-            <button class="navButton" onclick="goToURL('videos.html')" type="button">Videos</button>
-            <hr>
-            <button class="navButton" onclick="goToURL('podcasts.html')" type="button">Podcasts</button>
-            <hr>
-            <button class="navButton" onclick="goToURL('blogs.html')" type="button">Blogs</button>
-            <hr>
+        </div>
+        <div style="max-height: 100px; height: 100px; width: max-content;"></div>
+        <div class="flex-container">
+            <div style="margin-right: 10%; margin-left: 10%; padding-top: 175px;">
+                <p>
+                   Place Holder
+                </p>
+            </div>
         </div>
     </body>
 </html>

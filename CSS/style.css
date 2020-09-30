@@ -1,22 +1,30 @@
-/* Last updated Alpha 2.0.0 build 0030-c */
+/* Last updated Alpha 2.1.0 build 0030-d */
 
+#header {
+    width: 100%;
+    position: fixed;
+    transition: 0.15s;
+    top: 0;
+    right: 0;
+    left: 0;
+}
 header {
     background: #8723c1;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
     color: white;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
 }
 
-.headerTitle {
+#headerTitle {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: relative;
-    font-size: 80px;
+    transition: 0.15s;
+    font-size: 60px;
     margin-left: 20px;
     padding: 0px;
     float: left;
+    
 }
 
 .flex-container {
@@ -25,6 +33,7 @@ header {
 
 #navBar {
     background-color: white;
+    transition: 0.15s;
     border: solid 5px lightblue;
     border-left-color: white;
     border-right-color: white;
@@ -55,7 +64,8 @@ header {
 
 #frontierLogo {
     float: left; 
-    width: 12%; 
+    width: 10%; 
+    transition: 0.15s;
     background-color: white; 
     border-radius: 20%; 
     border-width: 10px; 
@@ -65,3 +75,11 @@ header {
 .navDivider {
     border: thin 1px lightblue;
 }
+
+body::-webkit-scrollbar {
+    overflow: visible;
+    display: none;
+    
+}
+
+
