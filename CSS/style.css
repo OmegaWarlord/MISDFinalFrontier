@@ -1,9 +1,9 @@
-/* Last updated Alpha 2.1.4 build 0030-h */
+/* Last updated Alpha 2.1.5 build 0030-i */
 
 #header {
     width: 100%;
     position: fixed;
-    transition: 0.15s;
+    transition: 0.2s;
     top: 0;
     right: 0;
     left: 0;
@@ -19,7 +19,7 @@ header {
 #headerTitle {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: relative;
-    transition: 0.15s;
+    transition: 0.2s;
     font-size: 60px;
     margin-left: 20px;
     padding: 0px;
@@ -33,7 +33,7 @@ header {
 
 #navBar {
     background-color: white;
-    transition: ease-in-out 0.15s;
+    transition: ease-in-out 0.2s;
     border: solid 5px lightblue;
     border-left-color: white;
     border-right-color: white;
@@ -43,7 +43,7 @@ header {
     cursor: pointer;
     background-color:white;
     border: none;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.2s;
     color: black;
     padding: 15px 15px;
     margin: 5px;
@@ -67,7 +67,7 @@ header {
 #frontierLogo {
     float: left; 
     width: 10%; 
-    transition: 0.15s;
+    transition: 0.2s;
     background-color: white; 
     border-radius: 20%; 
     border-width: 10px; 
@@ -83,5 +83,7 @@ body::-webkit-scrollbar {
     display: none;
     
 }
+
+body::-moz-
 
 
