@@ -1,4 +1,4 @@
-/* Last updated Alpha 2.1.0 build 0030-d */
+/* Last updated Alpha 2.1.2 build 0030-f */
 
 #header {
     width: 100%;
@@ -42,6 +42,7 @@ header {
 .navButton {
     background-color:white;
     border: none;
+    transition: 0.15s;
     color: black;
     padding: 15px 15px;
     margin: 5px;
