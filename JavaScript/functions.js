@@ -1,1 +1,4 @@
-// Last updated Pre Alpha 1.1.0 build 0029-b
+// Last updated Pre Alpha 2.0.0 build 0030-c
+function goToURL(val){
+    window.open(val, "_self");
+}
