@@ -1,19 +1,22 @@
-// Last updated Pre Alpha 2.1.0 build 0030-d
-function $(x) {return document.getElementById(x);} 
-function c(x) {return document.getElementsByClassName(x);}
-
+// Last Updated Alpha 1.0.0 build 0102
 function goToURL(val){
     window.open(val, "_self");
 }
 
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    $("headerTitle").style.fontSize = "20px";
-    $("frontierLogo").style.width = "2%";
-  } else {
-    $("headerTitle").style.fontSize = "60px";
-    $("frontierLogo").style.width = "10%";
-  }
-}
+$(document).ready(function(){
+  $("#searchButton").click(function() {
+    var val1 = $("#searchInfo").val();
+    alert(val1);
+  })
+});
 
+$(document).scroll(function() {
+  
+  if ($(document).scrollTop() > 50 ||  $('html').scrollTop() > 50) {
+    $("#headerTitle").css("fontSize", "20px");
+    $("#frontierLogo").css("width", "2%");
+  } else {
+    $("#headerTitle").css("fontSize", "60px");
+    $("#frontierLogo").css("width", "10%");
+  }
+});
