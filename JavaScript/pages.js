@@ -15,7 +15,7 @@ var config = {
 var app = firebase.initializeApp(config);
 const db = app.firestore();
 
-let page = $("meta[name='name']").attr('content');
+var page = $("meta[name='name']").attr('content');
 
 switch(page) {
     case 'latest':{
