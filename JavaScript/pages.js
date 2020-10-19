@@ -60,7 +60,7 @@ switch(page) {
     case 'articles':{
         db.collection('articles').get().then(querySnapshot => {
             let i = 0;
-            let articlesArray = [];
+            let articlesArray = new Array();
             querySnapshot.forEach(doc => {
                 articlesArray.push(doc);
             })
@@ -133,7 +133,7 @@ switch(page) {
     case 'podcasts':{
         db.collection('podcasts').get().then(querySnapshot => {
             let i = 0;
-            let podcastArray = [];
+            let podcastArray = new Array();
             querySnapshot.forEach(doc => {
                 podcastArray.push(doc);
             })
