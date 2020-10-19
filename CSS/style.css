@@ -1,4 +1,4 @@
-/* Last Updated Alpha 1.0.0 build 0102 */
+/* Last Updated Beta 1.0.0 build 0119 */
 
 p {
     text-align: justify;
@@ -50,7 +50,11 @@ footer {
 }
 
 .flex-container {
-    display: flex;
+    display: flex;   
+}
+
+#author {
+
 }
 
 #navBar {
@@ -170,3 +174,13 @@ body::-webkit-scrollbar {
     fill: lightslategray;
 }
 
+#vMain {
+    min-width: 100%;
+    background-color: transparent;
+    white-space: pre-line;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-break: keep-all;
+}
