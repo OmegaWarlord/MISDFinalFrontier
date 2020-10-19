@@ -22,7 +22,7 @@ switch(page) {
         break;
     }
     case 'newsLetters':{
-        db.collection('newsLetters').gSet().then(querySnapshot => {
+        db.collection('newsLetters').get().then(querySnapshot => {
             let i = 0;
             var newsArray = new Array();
             querySnapshot.forEach(doc => {
