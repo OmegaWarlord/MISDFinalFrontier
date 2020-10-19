@@ -24,7 +24,7 @@ switch(page) {
     case 'newsLetters':{
         db.collection('newsLetters').gSet().then(querySnapshot => {
             let i = 0;
-            let newsArray = new Array();
+            var newsArray = new Array();
             querySnapshot.forEach(doc => {
                 newsArray.push(doc);
             })
@@ -60,7 +60,7 @@ switch(page) {
     case 'articles':{
         db.collection('articles').get().then(querySnapshot => {
             let i = 0;
-            let articlesArray = new Array();
+            var articlesArray = new Array();
             querySnapshot.forEach(doc => {
                 articlesArray.push(doc);
             })
@@ -97,7 +97,7 @@ switch(page) {
     case 'videos':{
         db.collection('videos').get().then(querySnapshot => {
             let i = 0;
-            let videoArray = new Array();
+            var videoArray = new Array();
             querySnapshot.forEach(doc => {
                 videoArray.push(doc);
             })
@@ -133,7 +133,7 @@ switch(page) {
     case 'podcasts':{
         db.collection('podcasts').get().then(querySnapshot => {
             let i = 0;
-            let podcastArray = new Array();
+            var podcastArray = new Array();
             querySnapshot.forEach(doc => {
                 podcastArray.push(doc);
             })
@@ -170,7 +170,7 @@ switch(page) {
     case 'blogs':{
         db.collection('blogs').get().then(querySnapshot => {
             let i = 0;
-            let blogsArray = new Array();
+            var blogsArray = new Array();
             querySnapshot.forEach(doc => {
                 blogsArray.push(doc);
             })
