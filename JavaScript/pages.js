@@ -1,4 +1,4 @@
-// Last Updated Beta 1.0.0 build 0119
+// Last Updated Beta 1.09 build 0119-j
 var config = {
     apiKey: "AIzaSyBnL3LPUijw8GQ53Ix-vqSKjNaNBnb4UwE",
     authDomain: "journaism2.firebaseapp.com",
