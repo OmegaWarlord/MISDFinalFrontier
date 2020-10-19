@@ -1,4 +1,4 @@
-// Last Updated Beta 1.0.0 build 0119
+// Last Updated Beta 1.0.1 build 0119-b
 function goToURL(val){
     window.open(val, "_self");
 }
@@ -10,15 +10,6 @@ $(document).ready(function(){
   $("#searchButton").click(function() {
     var val1 = $("#searchInfo").val();
     console.log(val1);
-  })
-  var audio = new Audio('otherfiles/audio/thing.mp3');
-  $("button").click(function() {
-    var int = Math.random(1000000);
-    if(int == 1){
-      if(isPlaying(audio))
-        audio.pause();
-      else audio.play();
-    }
   })
 });
 
