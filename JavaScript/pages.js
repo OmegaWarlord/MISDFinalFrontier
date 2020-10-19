@@ -189,14 +189,14 @@ switch(page) {
             })
             reload();
             $('#nextButton').click(function(){
-                if(e < (blogsArray.length-1)){
-                    e++;
+                if(i < (blogsArray.length-1)){
+                    i++;
                     reload();
                 }
             })
             $('#prevButton').click(function(){
-                if(e > 0){
-                    e--;
+                if(i > 0){
+                    i--;
                     reload();
                 }
             })
