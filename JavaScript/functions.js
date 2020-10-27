@@ -15,8 +15,10 @@ $(document).scroll(function() {
   if($(document).scrollTop() > 50 || $('html').scrollTop() > 50) {
     $("#headerTitle").css("fontSize", "20px");
     $("#frontierLogo").css("width", "2%");
+    $("#logo").css("width", "50%");
   } else {
     $("#headerTitle").css("fontSize", "60px");
     $("#frontierLogo").css("width", "10%");
+    $("#logo").css("width", "100%");
   }
 });

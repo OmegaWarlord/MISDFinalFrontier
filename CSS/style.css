@@ -116,11 +116,12 @@ footer {
 
 #frontierLogo {
     float: left; 
-    width: 10%; 
+    width: 5%; 
     transition: 0.2s;
     background-color: white; 
     border-radius: 20%; 
     border-width: 10px; 
+    margin-left: 10px;
     padding: 10px;
 }
 
