@@ -1,4 +1,4 @@
-// Last Updated Beta 2.0.0 build 0211
+// Last Updated Pre-Release 1.0.0 build 0219
 var config = {
     apiKey: "AIzaSyBnL3LPUijw8GQ53Ix-vqSKjNaNBnb4UwE",
     authDomain: "journaism2.firebaseapp.com",
@@ -39,16 +39,10 @@ $(document).ready(function(){
         $('title').text('The Final Frontier | Articles');
         thing(page1);
     })
-    $('#videoButton').click(function() {
-        $("meta[name='name']").attr('content', 'videos');
+    $('#multiButton').click(function() {
+        $("meta[name='name']").attr('content', 'multimedia');
         var page1 = $("meta[name='name']").attr('content');
-        $('title').text('The Final Frontier | Videos');
-        thing(page1);  
-    })
-    $('#podcastButton').click(function() {
-        $("meta[name='name']").attr('content', 'podcasts');
-        var page1 = $("meta[name='name']").attr('content');
-        $('title').text('The Final Frontier | Podcasts');
+        $('title').text('The Final Frontier | Multimedia');
         thing(page1);  
     })
     $('#blogButton').click(function() {
@@ -68,9 +62,6 @@ function thing(page) {
             var converter = new showdown.Converter();
             var html = converter.makeHtml('<pre>Hello, this page is not formatted yet</pre>');
             target.innerHTML = html;
-            break;
-        }
-        case 'latest':{
             break;
         }
         case 'newsLetters':{
@@ -140,18 +131,18 @@ function thing(page) {
             })
             break;
         }
-        case 'videos':{
-            db.collection('videos').get().then(querySnapshot => {
+        case 'multimedia':{
+            db.collection('multimedia').get().then(querySnapshot => {
                 let i = 0;
-                var videoArray = new Array();
+                var multiArray = new Array();
                 querySnapshot.forEach(doc => {
-                    videoArray.push(doc);
+                    multiArray.push(doc);
                 })
-                videoArray.sort(function(x, y) {
+                multiArray.sort(function(x, y) {
                     return y.get('date') - x.get('date');
                 })
                 function reload() {
-                    var content = videoArray[i].get('content');
+                    var content = multiArray[i].get('content');
                     var target = document.getElementById('Pmain');
                     var converter = new showdown.Converter();
                     var html = converter.makeHtml(content);
@@ -159,40 +150,7 @@ function thing(page) {
                 }
                 reload();
                 $('#nextButton').click(function(){
-                    if(i < (videoArray.length-1)){
-                        i++;
-                        reload();
-                    }
-                })
-                $('#prevButton').click(function(){
-                    if(i > 0){
-                        i--;
-                        reload();
-                    }
-                })
-            })
-            break;
-        }
-        case 'podcasts':{
-            db.collection('podcasts').get().then(querySnapshot => {
-                let i = 0;
-                var podcastArray = new Array();
-                querySnapshot.forEach(doc => {
-                    podcastArray.push(doc);
-                })
-                podcastArray.sort(function(x, y) {
-                    return y.get('date') - x.get('date');
-                })
-                function reload() {
-                    var content = podcastArray[i].get('content');
-                    var target = document.getElementById('Pmain');
-                    var converter = new showdown.Converter();
-                    var html = converter.makeHtml(content);
-                    target.innerHTML = html;
-                }
-                reload();
-                $('#nextButton').click(function(){
-                    if(i < (podcastArray.length-1)){
+                    if(i < (multiArray.length-1)){
                         i++;
                         reload();
                     }
