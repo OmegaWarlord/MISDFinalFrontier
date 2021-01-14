@@ -12,7 +12,7 @@ var config = {
 
 
 
-var app = firebase.initializeApp(config);
+var app = firebase.initializeApp(config); // skipcq: JS-0125
 const db = app.firestore();
 var page = $("meta[name='name']").attr('content');
 
@@ -65,7 +65,7 @@ function thing(page) {
     switch(page) {
         case 'home':{
             var target = document.getElementById('Pmain');
-            var converter = new showdown.Converter();
+            var converter = new showdown.Converter(); // skipcq: JS-0125
             var html = converter.makeHtml('<pre>Hello, this page is not formatted yet</pre>');
             target.innerHTML = html;
             break;
@@ -86,7 +86,7 @@ function thing(page) {
                 function reload() {  
                     var content = newsArray[i].get('content');
                     var target = document.getElementById('Pmain');
-                    var converter = new showdown.Converter();
+                    var converter = new showdown.Converter(); // skipcq: JS-0125
                     var html = converter.makeHtml(content);
                     target.innerHTML = html;
                 }
@@ -119,7 +119,7 @@ function thing(page) {
                 function reload() {  
                     var content = articlesArray[i].get('content');
                     var target = document.getElementById('Pmain');
-                    var converter = new showdown.Converter();
+                    var converter = new showdown.Converter(); // skipcq: JS-0125
                     var html = converter.makeHtml(content);
                     target.innerHTML = html;
                     
@@ -153,7 +153,7 @@ function thing(page) {
                 function reload() {
                     var content = videoArray[i].get('content');
                     var target = document.getElementById('Pmain');
-                    var converter = new showdown.Converter();
+                    var converter = new showdown.Converter(); // skipcq: JS-0125
                     var html = converter.makeHtml(content);
                     target.innerHTML = html;
                 }
@@ -186,7 +186,7 @@ function thing(page) {
                 function reload() {
                     var content = podcastArray[i].get('content');
                     var target = document.getElementById('Pmain');
-                    var converter = new showdown.Converter();
+                    var converter = new showdown.Converter(); // skipcq: JS-0125
                     var html = converter.makeHtml(content);
                     target.innerHTML = html;
                 }
@@ -216,7 +216,7 @@ function thing(page) {
                 function reload() {  
                     var content = blogsArray[i].get('content');
                     var target = document.getElementById('Pmain');
-                    var converter = new showdown.Converter();
+                    var converter = new showdown.Converter(); // skipcq: JS-0125
                     var html = converter.makeHtml(content);
                     target.innerHTML = html;
                 }
