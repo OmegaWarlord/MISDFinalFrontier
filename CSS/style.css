@@ -53,10 +53,6 @@ footer {
     display: flex;   
 }
 
-#author {
-
-}
-
 #navBar {
     background-color: white;
     transition: ease-in-out 0.2s;
