@@ -110,6 +110,20 @@ footer {
     outline: none;
 }
 
+.name{
+    margin: 0%;
+    font-weight: bold;
+}
+
+.bio{
+    margin:0%;
+}
+
+.bioPic{
+    width: 15em;
+    margin-left: 2em;
+}
+
 #frontierLogo {
     float: left; 
     width: 5%; 
@@ -184,4 +198,5 @@ pre {
 
 #logo {
     transition: 0.2s;
+    width: 297px;
 }
